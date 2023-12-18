@@ -1,6 +1,9 @@
 
+<div class="flex justify-center">
+    <app-todo-drawer #editor [date]="calender.selectedDate" ></app-todo-drawer>
+    <app-calender #calender (openDrawer)="editor.toggle()"></app-calender>
 
-<app-hello></app-hello>
+</div>
 
 <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
 <!-- * * * * * * * * * * * The content above * * * * * * * * * * * -->

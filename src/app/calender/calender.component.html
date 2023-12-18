@@ -1,0 +1,44 @@
+
+<div class="">
+    <div class="flex justify-between items-center">
+        <div class="flex">
+            <button (click)="setPreMonth()">Decrease</button>
+            <p class="m-6">{{displayDate | date: "MMMM y"}}</p>
+            <button (click)="setNextMonth()">Increase</button>
+        </div>
+        <div>
+            {{getData().startdate| date:"y MM d hh:MM"}}
+        </div>
+        
+        <div>
+            <label></label>
+            <select [value]="viewType">
+                <option value=w>Week</option>
+                <option value=m>Month</option>
+            </select>
+        </div>
+    </div>
+    
+    <table>
+        <th *ngFor="let d of classReference.weekDays">{{d}}</th>
+        <tr *ngFor="let r of [].constructor(6), index as row">
+            <td class="w-32 border-solid border-2 border-indigo-600" *ngFor="let c of [].constructor(7); index as col">
+                <!-- <button (click)="passData($event)">
+                    {{getEachMonthDisplayView()[7*row+col]| date:"fullDate" }}
+                </button> -->
+                
+                    <app-calender-date 
+                    [date]="getEachMonthDisplayView()[7*row+col]" 
+                    (eventSendDate)="setSelectedDate($event)">
+                    </app-calender-date>
+                    
+                
+            </td>
+        </tr>
+    </table>
+</div>
+
+
+
+
+

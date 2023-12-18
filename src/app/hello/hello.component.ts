@@ -9,6 +9,8 @@ export class HelloComponent implements OnInit{
   allow: Boolean = false;
   ID: Number = 10;
   Name: String = "Hieu";
+
+  
   constructor() {
     setTimeout(() => this.allow = true, 3000);
   }
@@ -16,7 +18,7 @@ export class HelloComponent implements OnInit{
     throw new Error('Method not implemented.');
   }
 
-  onChangeName = (): void => {
+  public onChangeName = (): void => {
     this.Name = "zxczxc";
   }
 
