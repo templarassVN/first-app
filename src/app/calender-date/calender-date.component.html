@@ -1,10 +1,12 @@
-<button class="absolute" class="w-full h-full" (click)="sendDate()">
-    {{date| date:"d" }}
-    
-    <div [textContent]="i" class="z-10 h-1.5" *ngFor="let r of [].constructor(24); index as i">
-
+<div class="w-30 h-32">
+    <div class="w-full h-full" (click)="sendDate()">
+        <div>{{date| date:"d" }}</div>
+        <ul id="test">
+            <li>sadasd</li>
+        </ul>
+        
         
     </div>
+</div>
 
-</button>
 

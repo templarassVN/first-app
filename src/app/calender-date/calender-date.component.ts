@@ -1,4 +1,5 @@
 import { Component, EventEmitter, Input, Output } from '@angular/core';
+import { CalenderDateQueryDto } from './dto/canlender-date-queryDto';
 
 @Component({
   selector: 'app-calender-date',
@@ -9,7 +10,8 @@ export class CalenderDateComponent {
   @Input()
   date: Date = new Date();
 
-  tasks: Array<string> = [];
+  @Input()
+  tasks: Array<CalenderDateQueryDto> = [];
 
   @Output()
   eventSendDate: EventEmitter<Date> = new EventEmitter();
