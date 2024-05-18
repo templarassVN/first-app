@@ -9,7 +9,7 @@ import { CalenderDateQueryDto } from './dto/canlender-date-queryDto';
 export class CalenderDateComponent {
   @Input()
   date: Date = new Date();
-
+  
   @Input()
   tasks: Array<CalenderDateQueryDto> = [];
 

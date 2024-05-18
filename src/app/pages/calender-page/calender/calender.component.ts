@@ -1,6 +1,6 @@
 import { Component, EventEmitter, Input, Output } from '@angular/core';
-import { CalenderDateComponent } from '../calender-date/calender-date.component';
-import { CalenderDateQueryDto } from '../calender-date/dto/canlender-date-queryDto';
+import { CalenderDateComponent } from '../../../components/calender-date/calender-date.component';
+import { CalenderDateQueryDto } from '../../../components/calender-date/dto/canlender-date-queryDto';
 
 @Component({
   selector: 'app-calender',
