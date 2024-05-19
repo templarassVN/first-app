@@ -11,6 +11,7 @@ import { NotFoundComponent } from './pages/not-found-page/not-found/not-found.co
 import { LoginComponent } from './components/login/login.component';
 import { RouterModule } from '@angular/router';
 import { routes } from './routes/app.routes';
+import { LoginPageComponent } from './pages/login-page/login-page.component';
 
 
 
@@ -23,6 +24,7 @@ import { routes } from './routes/app.routes';
     CalenderDateComponent,
     NotFoundComponent,
     LoginComponent,
+    LoginPageComponent
   ],
   imports: [
     BrowserModule,
