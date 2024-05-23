@@ -11,26 +11,32 @@ import { NotFoundComponent } from './pages/not-found-page/not-found/not-found.co
 import { LoginComponent } from './components/login/login.component';
 import { RouterModule } from '@angular/router';
 import { routes } from './routes/app.routes';
+import { LoginPageComponent } from './pages/login-page/login-page.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { DatepickerMinMaxExampleComponent } from './components/datepicker-min-max-example/datepicker-min-max-example.component';
 
 
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    HelloComponent,
-    CalenderComponent,
-    TodoDrawerComponent,
-    CalenderDateComponent,
-    NotFoundComponent,
-    LoginComponent,
-  ],
-  imports: [
-    BrowserModule,
-    FormsModule,
-    RouterModule.forRoot(routes)
-  ],
-  providers: [],
-  bootstrap: [AppComponent]
+    declarations: [
+        AppComponent,
+        HelloComponent,
+        CalenderComponent,
+        TodoDrawerComponent,
+        CalenderDateComponent,
+        NotFoundComponent,
+        LoginComponent,
+        LoginPageComponent,
+    ],
+    providers: [],
+    bootstrap: [AppComponent],
+    imports: [
+        BrowserModule,
+        FormsModule,
+        RouterModule.forRoot(routes),
+        BrowserAnimationsModule,
+        DatepickerMinMaxExampleComponent
+    ]
 })
 export class AppModule {
 
